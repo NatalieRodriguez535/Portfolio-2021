@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*the whole pages style  */
+body {
+  font-family: "Hind", sans-serif;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* NAV BAR starts here*/
+.navbar {
+  width: 100%;
+  /* This defines a fle.hero-container1 container; inline or block depending on the given value. It enables a flex context for all its direct children   */
+  display: flex;
+  justify-content: center;
+  /* made the bullet point go away   */
+  list-style-type: none;
+}
+
+.current {
+  color: gray;
+}
+
+/*style the nav bar  */
+.navbar a {
+  text-decoration: none;
+
+  font-size: 30px;
+}
+
+.not-current {
+  color: black;
+}
+
+/* put space inbetween my nav bar */
+.navbar li {
+  /* top right bottom left   */
+  padding: 20px 20px 20px 20px;
+}
+
+.navbar a:hover {
+  color: #aec6b5;
+}
+
+/* Home Page starts here */
+.about-me-h-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.about-me-img-conatiner {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-me-img-1 {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+  border-radius: 7px;
+}
+
+.about-me-img-2 {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+  border-radius: 7px;
+}
+
+.about-me-pg {
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  size: 150px;
+  line-height: 50px;
+}
+
+/* project page starts here */
+.my-work{
+text-align: center;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 2000px;
+}
+.project{
+margin: 35px;
+padding-bottom: 100px;
+}
+
+.project a{
+text-decoration: none;
+color:black;
+}
+
+.project a:hover{
+  color: #aec6b5;
+}
+
+.my-work-img{
+  width: 1200px;
+  height: 600px;
+}
+
+/* resume page starts here */
+.resume-img-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.resume-img {
+  width: 500px;
+  height: 625px;
+}
+
+/* contact page starts here */
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form-container label {
+  margin: 10px 0px;
+}
+
+.form-container input {
+  padding: 20px 20px;
+  background-color: lightgray;
+}
+
+.input-button {
+  margin-top: 20px;
+}
+
+/* FOOTER STARTS HERE */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  height: 55px;
+  background-color: #aec6b5;
+}
+
+.footer-socialmedia i {
+  font-size: 35px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.footer-socialmedia a {
+  color: white;
+}
+
+.copyright {
+  color: white;
+}
+
+/* media queries starts here */
+@media only screen and (min-width:400px) and (max-width:800px) {
+
+  /* NAV STARTS HERE */
+  .navbar {
+    height: 70px;
+  }
+
+  /* about me */
+
+  .about-me-img-1 {
+    width: 350px;
+    height: 600px;
+  }
+
+  .about-me-img-2 {
+    width: 350px;
+    height: 600px;
+    margin-right: 25px;
+  }
+
+  .about-me-img-container {
+    font-size: 20px;
+  }
+
+/* footer */
+
+  .footer {
+    height: 40px;
+  }
+
+  .footer-socialmedia i {
+    font-size: 25px;
+  }
+
+  
+
+}
+
+@media only screen and (max-width:400px) {
+
+  /* NAV STARTS HERE */
+  .navbar a {
+    font-size: 20px;
+  }
+  .current{
+    color: rgb(41, 38, 38);
+  }
+
+
+  /* about me */
+  .about-me-img-1{
+    height: 600px;
+  }
+
+  .about-me-img-2 {
+    height: 600px;
+    margin-right: 25px;
+  }
+
+  .about-me-img-container {
+    margin-top: 450px;
+  }
+
+  }
+
